@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
-  background-color: #f2f2f2;
-  font-family: Open Sans, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
 }
 
@@ -9,7 +8,12 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+h2 {
   display: block;
   color: black;
   font-weight: bold;
@@ -17,7 +21,8 @@ h1 {
 }
 
 img {
-  width: 10em;
+  display:block;
+  width: 100px;
 }
 .cards {
   margin: 0;
@@ -32,7 +37,8 @@ img {
   max-width: 20em;
   padding: 1em;
   background-color: #fff;
-  border: 3px solid #e2e2e2;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
   text-align: left;
 }
 
@@ -41,9 +47,9 @@ img {
   margin: 0 auto 1rem;
 }
 
-.cards strong {
+.cards h3 {
   display: block;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 .cards div {
@@ -53,17 +59,34 @@ img {
 .cards a {
   display: inline-block;
   padding: .5em .75em;
-  background-color: #ccc;
+  background-color: #333;
   border-radius: 4px;
-  color: #000;
+  color: #ccc;
   text-decoration: none;
 }
 
 .cards a:hover {
-  background-color: #333;
+  background-color: #000;
   color: #fff;
 }
 
 .author {
   font-style: italic;
+  margin: 0;
+}
+
+li:nth-child(1) {
+  background-color: #e2e2e2;
+}
+
+li:nth-child(2) {
+  background-color: #ccc;
+}
+
+li:nth-child(3) {
+  background-color: #aaa;
+}
+
+li:nth-child(4) {
+  background-color: #999;
 }
