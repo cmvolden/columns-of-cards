@@ -9,9 +9,13 @@ html {
   box-sizing: inherit;
 }
 
+section {
+  margin: 0 auto 1.5rem;
+}
+
 body {
   background-color: #f2f2f2;
-  margin: 1.75em;
+  margin: 0;
 }
 
 h2 {
@@ -25,14 +29,12 @@ h2 {
 
 img {
   display: block;
-  max-width: 100%;
-  width: 100px;
+  width: 100%;
   margin: 1em;
 }
 
 .cards {
   display: flex;
-  flex-grow: 1;
   justify-content: center;
   flex-direction: row;
   margin: 0;
@@ -55,6 +57,7 @@ img {
 .cards img {
   display: block;
   margin: 0 auto 1rem;
+  width: 100px;
 }
 
 .cards h3 {
@@ -77,12 +80,23 @@ img {
   text-decoration: none;
 }
 
+.btn {
+  background-color: #333;
+  border-radius: 4px;
+  color: #fff;
+}
+
 .btn-small {
   font-size: .875rem;
   font-weight: bold;
   display: block;
   width: 100%;
   text-align: left;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .cards .btn-small:hover {
@@ -94,6 +108,7 @@ img {
   font-style: italic;
   margin: 0;
   font-size: .875rem;
+  flex-grow: 0;
 }
 
 p {
@@ -101,20 +116,25 @@ p {
   margin: 0 0 1.5rem;
   display: inline-block;
   vertical-align: middle;
+  flex-grow: 0;
 }
 
 li:nth-child(1) {
   background-color: #e2e2e2;
+  width: 25%;
 }
 
 li:nth-child(2) {
   background-color: #ccc;
+  width: 25%;
 }
 
 li:nth-child(3) {
   background-color: #aaa;
+  width: 25%;
 }
 
 li:nth-child(4) {
   background-color: #999;
+  width: 25%;
 }
