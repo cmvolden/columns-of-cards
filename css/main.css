@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }
 
@@ -14,21 +14,24 @@ body {
 }
 
 h2 {
+  margin: 1.5rem;
   display: block;
   color: black;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
 }
 
 img {
-  display:block;
+  display: block;
   max-width: 100%;
   width: 100px;
 }
+
 .cards {
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  flex-grow:
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -54,6 +57,8 @@ img {
 .cards h3 {
   display: block;
   margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .cards div {
@@ -71,6 +76,10 @@ img {
 
 .btn-small {
   font-size: .875rem;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  text-align: left;
 }
 
 .cards .btn-small:hover {
@@ -81,6 +90,12 @@ img {
 .author {
   font-style: italic;
   margin: 0;
+  font-size: .875rem;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 1.5rem;
 }
 
 li:nth-child(1) {
